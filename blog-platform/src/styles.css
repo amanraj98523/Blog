@@ -1,0 +1,168 @@
+
+body, h1, h2, h3, p, ul, ol, li, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #e7dede;
+  color: #1c1a1a;
+  line-height: 1.6;
+  height: 400px;
+  width: 500px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: auto; 
+}
+
+
+.container {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(28, 81, 107);
+}
+
+form {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #0d4b1a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+
+.blog-list {
+  margin: 20px 0;
+}
+
+.blog-list div {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-list h2 {
+  color: #333;
+}
+
+.blog-list p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.blog-list a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.blog-list button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.blog-list button:hover {
+  background: #c0392b;
+}
+
+.blog-details {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.blog-details h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-details p {
+  color: #666;
+}
+
+.blog-details button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.blog-details button:hover {
+  background: #45a049;
+}
+
+.blog-details form input, 
+.blog-details form textarea, 
+.blog-details form button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+
+  form input, form textarea, form button {
+      font-size: 14px;
+  }
+
+  .blog-list button {
+      padding: 5px;
+      font-size: 12px;
+  }
+
+  .blog-details button {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+}
